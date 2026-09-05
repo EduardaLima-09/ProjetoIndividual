@@ -1,0 +1,8 @@
+CREATE TABLE album (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(100) NOT NULL,
+    artista VARCHAR(100) NOT NULL,
+    genero VARCHAR(50) NOT NULL,
+    ano INT NOT NULL,
+    gravadora VARCHAR(100)
+);
