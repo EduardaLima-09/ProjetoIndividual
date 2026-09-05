@@ -235,11 +235,11 @@ function App() {
                     <td>{album.gravadora || '-'}</td>
                     <td className={styles.colAcoes}>
                       <button onClick={() => editarAlbum(album)}
-                        className={styles.btnEditar}>
+                        className={styles.btnEditar}> Editar
                       </button>
                       <button
                         onClick={() => removerAlbum(album.id)}
-                        className={styles.btnRemover}>
+                        className={styles.btnRemover}> Excluir
                       </button>
                     </td>
                   </tr>
