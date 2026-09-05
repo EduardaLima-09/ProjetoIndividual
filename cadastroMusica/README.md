@@ -1,16 +1,94 @@
-# React + Vite
+# Catálogo Musical
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto Integrador entre Front-end e Programação Web desenvolvido na SPTECH
 
-Currently, two official plugins are available:
+## Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O **Catálogo Musical** é uma aplicação web que permite cadastrar, listar, editar e remover álbuns musicais. Desenvolvido com Java Spring Boot no back-end e React no front-end.
 
-## React Compiler
+### Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ✅ Cadastrar álbuns (título, artista, gênero, ano, gravadora)
+- ✅ Listar todos os álbuns
+- ✅ Editar álbuns existentes
+- ✅ Remover álbuns
+- ✅ Buscar álbum por ID
 
-## Expanding the ESLint configuration
+### Tema
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Música 🎵
+
+---
+
+## Tecnologias
+
+### Back-end
+- Java 21
+- Spring Boot 3.2.0
+- Spring JDBC / JdbcTemplate
+- H2 Database
+- Maven
+
+### Front-end
+- React 18.2.0
+- Vite
+- Axios
+- CSS Modules
+
+---
+
+## Estrutura do Projeto
+projeto-musica/
+├── api/ # Back-end Spring Boot
+│ ├── src/
+│ │ ├── main/
+│ │ │ ├── java/
+│ │ │ │ └── school/sptech/cadastroMusica/
+│ │ │ │ ├── Album.java
+│ │ │ │ ├── AlbumControle.java
+│ │ │ │ └── CadastroMusicaApplication.java
+│ │ │ └── resources/
+│ │ │ ├── application.properties
+│ │ │ └── schema.sql
+│ │ └── test/
+│ ├── pom.xml
+│ └── README.md
+│
+├── cliente/ # Front-end React
+│ ├── src/
+│ │ ├── main.jsx
+│ │ ├── App.jsx
+│ │ ├── App.module.css
+│ │ └── servicos/
+│ │ └── api.js
+│ ├── package.json
+│ ├── vite.config.js
+│ ├── index.html
+│ └── README.md
+│
+└── README.md
+
+
+---
+
+## Como Executar
+
+### Pré-requisitos
+
+- Java 21+
+- Node.js 18+
+- npm
+
+### 1. Clonar o repositório
+
+```bash
+git clone https://github.com/seu-usuario/projeto-musica.git
+cd projeto-musica
+
+cd api
+./mvnw spring-boot:run
+
+cd cliente
+npm install
+npm run dev
+
