@@ -1,18 +1,19 @@
-# 🎵 Catálogo Musical
+![Tela principal do Catálogo Musical](https://github.com/EduardaLima-09/ProjetoIndividual/blob/main/CadastroMusica.png)
+# Catálogo Musical
 
 Projeto Integrador entre **Front-end e Programação Web** desenvolvido na **SPTECH**.
 
 ---
 
-## 📸 Sobre o Projeto
+## Sobre o Projeto
 
 O **Catálogo Musical** é uma aplicação web desenvolvida para facilitar o cadastro e o gerenciamento de álbuns musicais.
 
 A aplicação permite cadastrar, visualizar, editar e remover álbuns, contendo informações como título, artista, gênero, ano e gravadora.
 
-### 🖥️ Visualização do sistema
+### Visualização do sistema
 
-![Tela principal do Catálogo Musical](./imagens/catalogo.png)
+![Tela principal do Catálogo Musical](https://github.com/EduardaLima-09/ProjetoIndividual/blob/main/Captura%20de%20tela%202026-09-05%20193919.png)
 
 ---
 
@@ -27,52 +28,34 @@ A aplicação permite cadastrar, visualizar, editar e remover álbuns, contendo 
 
 ---
 
-## 🎶 Tema
+## Tema
 
-**Música 🎵**
+**Música**
 
 O projeto foi desenvolvido com o tema de catálogo musical, permitindo organizar informações sobre diferentes álbuns.
 
 ---
+## Tecnologias
 
-## 📸 Telas do Sistema
+### Back-end
 
-### 🏠 Tela principal
+<p>
+  <img src="https://img.shields.io/badge/Java-cc7f97?style=for-the-badge&logo=openjdk&logoColor=white">
+  <img src="https://img.shields.io/badge/Spring%20Boot-cc7f97?style=for-the-badge&logo=springboot&logoColor=white">
+  <img src="https://img.shields.io/badge/Spring%20JDBC-cc7f97?style=for-the-badge&logo=spring&logoColor=white">
+  <img src="https://img.shields.io/badge/H2%20Database-cc7f97?style=for-the-badge&logo=h2&logoColor=white">
+  <img src="https://img.shields.io/badge/Maven-cc7f97?style=for-the-badge&logo=apachemaven&logoColor=white">
+</p>
 
-Nesta tela são apresentados os álbuns cadastrados no sistema.
+### Front-end
 
-![Tela principal](./imagens/catalogo.png)
+<p>
+  <img src="https://img.shields.io/badge/React-cc7f97?style=for-the-badge&logo=react&logoColor=white">
+  <img src="https://img.shields.io/badge/Vite-cc7f97?style=for-the-badge&logo=vite&logoColor=white">
+  <img src="https://img.shields.io/badge/Axios-cc7f97?style=for-the-badge&logo=axios&logoColor=white">
+  <img src="https://img.shields.io/badge/CSS%20Modules-cc7f97?style=for-the-badge&logo=cssmodules&logoColor=white">
+</p>
 
-### 📝 Cadastro de álbum
-
-Tela utilizada para cadastrar um novo álbum no catálogo.
-
-![Cadastro de álbum](./imagens/cadastro.png)
-
-### ✏️ Edição de álbum
-
-Tela utilizada para alterar as informações de um álbum já cadastrado.
-
-![Edição de álbum](./imagens/edicao.png)
-
----
-
-# 🛠️ Tecnologias
-
-## Back-end
-
-* ☕ Java 21
-* 🌱 Spring Boot 3.2.0
-* 🗄️ Spring JDBC / JdbcTemplate
-* 💾 H2 Database
-* 📦 Maven
-
-## Front-end
-
-* ⚛️ React 18.2.0
-* ⚡ Vite
-* 🔗 Axios
-* 🎨 CSS Modules
 
 ---
 
@@ -81,18 +64,13 @@ Tela utilizada para alterar as informações de um álbum já cadastrado.
 ```text
 projeto-musica/
 │
-├── imagens/
-│   ├── catalogo.png
-│   ├── cadastro.png
-│   └── edicao.png
-│
 ├── api/
 │   ├── src/
 │   │   ├── main/
 │   │   │   ├── java/
 │   │   │   │   └── school/sptech/cadastroMusica/
 │   │   │   │       ├── Album.java
-│   │   │   │       ├── AlbumControle.java
+│   │   │   │       ├── AlbumController.java
 │   │   │   │       └── CadastroMusicaApplication.java
 │   │   │   │
 │   │   │   └── resources/
@@ -122,7 +100,7 @@ projeto-musica/
 
 ---
 
-# 🚀 Como Executar
+# Como Executar
 
 ## Pré-requisitos
 
@@ -212,10 +190,8 @@ O front-end será disponibilizado pelo Vite.
 
 ---
 
-# 👩‍💻 Projeto
+# Projeto
 
 **Catálogo Musical**
 
-Projeto desenvolvido para o **Projeto Integrador entre Front-end e Programação Web — SPTECH**.
-
-🎵 Desenvolvido com React + Java Spring Boot.
+Projeto desenvolvido por Maria Eduarda Lima
