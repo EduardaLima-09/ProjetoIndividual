@@ -27,7 +27,7 @@ public class AlbumController {
     public ResponseEntity<List<Album>> listar() {
         String sql = "SELECT * FROM album";
         List<Album> albuns = template.query(sql, new BeanPropertyRowMapper<>(Album.class));
-        return ResponseEntity.ok(albuns);
+        return ResponseEntity.status(200).body(albuns);
     }
 
     @GetMapping("/{id}")
