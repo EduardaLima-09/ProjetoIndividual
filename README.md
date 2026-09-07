@@ -137,7 +137,6 @@ ProjetoIndividual/
 │   ├── public/
 │   ├── src/
 │   │   ├── assets/
-│   │   ├── componentes/
 │   │   ├── servicos/
 │   │   ├── App.jsx
 │   │   ├── App.css
