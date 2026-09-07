@@ -1,4 +1,5 @@
 ![Tela principal do Catálogo Musical](https://github.com/EduardaLima-09/ProjetoIndividual/blob/main/CadastroMusica.png)
+
 # Catálogo Musical
 
 Projeto Integrador entre **Front-end e Programação Web** desenvolvido na **SPTECH**.
@@ -9,7 +10,15 @@ Projeto Integrador entre **Front-end e Programação Web** desenvolvido na **SPT
 
 O **Catálogo Musical** é uma aplicação web desenvolvida para facilitar o cadastro e o gerenciamento de álbuns musicais.
 
-A aplicação permite cadastrar, visualizar, editar e remover álbuns, contendo informações como título, artista, gênero, ano e gravadora.
+A aplicação permite que o usuário **cadastre, visualize, edite e remova álbuns**, contendo informações como:
+
+* 🎵 Título
+* 🎤 Artista
+* 🎼 Gênero
+* 📅 Ano
+* 💿 Gravadora
+
+O projeto foi desenvolvido integrando um **Front-end em React** com um **Back-end em Java e Spring Boot**, utilizando uma API REST para realizar a comunicação entre as duas partes.
 
 ### Visualização do sistema
 
@@ -17,27 +26,31 @@ A aplicação permite cadastrar, visualizar, editar e remover álbuns, contendo 
 
 ---
 
-## ✨ Funcionalidades
+# ✨ Funcionalidades
 
-* ✅ Cadastrar álbuns
-* ✅ Listar todos os álbuns
-* ✅ Editar álbuns existentes
-* ✅ Remover álbuns
-* ✅ Buscar álbum por ID
-* ✅ Informar título, artista, gênero, ano e gravadora
+* Cadastrar álbuns
+* Listar todos os álbuns
+* Editar álbuns existentes
+* Remover álbuns
+* Buscar álbum por ID
+* Informar título, artista, gênero, ano e gravadora
+* Comunicação entre Front-end e Back-end através de uma API REST
+
+---
+
+# Tema
+
+### Música
+
+O projeto foi desenvolvido com o tema de **catálogo musical**, permitindo organizar informações sobre diferentes álbuns em uma única aplicação.
+
+A escolha do tema foi utilizada para colocar em prática conceitos de desenvolvimento **Front-end, Back-end, banco de dados e integração entre sistemas**.
 
 ---
 
-## Tema
+# Tecnologias
 
-**Música**
-
-O projeto foi desenvolvido com o tema de catálogo musical, permitindo organizar informações sobre diferentes álbuns.
-
----
-## Tecnologias
-
-### Back-end
+## Back-end
 
 <p>
   <img src="https://img.shields.io/badge/Java-cc7f97?style=for-the-badge&logo=openjdk&logoColor=white">
@@ -47,7 +60,29 @@ O projeto foi desenvolvido com o tema de catálogo musical, permitindo organizar
   <img src="https://img.shields.io/badge/Maven-cc7f97?style=for-the-badge&logo=apachemaven&logoColor=white">
 </p>
 
-### Front-end
+### Java 21
+
+Utilizado para desenvolver a parte do Back-end da aplicação.
+
+### Spring Boot
+
+Utilizado para criar a API REST e organizar o funcionamento do Back-end.
+
+### Spring JDBC
+
+Utilizado para realizar a comunicação entre a aplicação Java e o banco de dados.
+
+### H2 Database
+
+Banco de dados utilizado para armazenar as informações dos álbuns.
+
+### Maven
+
+Utilizado para gerenciar as dependências e executar o projeto Java.
+
+---
+
+## Front-end
 
 <p>
   <img src="https://img.shields.io/badge/React-cc7f97?style=for-the-badge&logo=react&logoColor=white">
@@ -56,47 +91,163 @@ O projeto foi desenvolvido com o tema de catálogo musical, permitindo organizar
   <img src="https://img.shields.io/badge/CSS%20Modules-cc7f97?style=for-the-badge&logo=cssmodules&logoColor=white">
 </p>
 
+### React
+
+Utilizado para criar a interface da aplicação e os componentes das telas.
+
+### Vite
+
+Utilizado para criar e executar o projeto Front-end durante o desenvolvimento.
+
+### Axios
+
+Utilizado para realizar as requisições do Front-end para a API.
+
+### CSS Modules
+
+Utilizado para organizar os estilos dos componentes, evitando conflitos entre classes CSS.
 
 ---
 
-# 📁 Estrutura do Projeto
+# Estrutura do Projeto
+
+O projeto está dividido em duas partes principais:
+
+* **Front-end:** responsável pela interface e interação com o usuário.
+* **Back-end:** responsável pela API, regras da aplicação e comunicação com o banco de dados.
 
 ```text
-projeto-musica/
+ProjetoIndividual/
 │
-├── api/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/
-│   │   │   │   └── school/sptech/cadastroMusica/
-│   │   │   │       ├── Album.java
-│   │   │   │       ├── AlbumController.java
-│   │   │   │       └── CadastroMusicaApplication.java
-│   │   │   │
-│   │   │   └── resources/
-│   │   │       ├── application.properties
-│   │   │       └── schema.sql
-│   │   │
-│   │   └── test/
-│   │
-│   ├── pom.xml
-│   └── README.md
+├── back-end/
+│   └── cadastroMusica/
+│       └── cadastroMusica/
+│           ├── src/
+│           │   ├── main/
+│           │   │   ├── java/
+│           │   │   └── resources/
+│           │   │
+│           │   └── test/
+│           │
+│           ├── pom.xml
+│           ├── mvnw
+│           └── mvnw.cmd
 │
-├── cliente/
+├── cadastroMusica/
+│   ├── public/
 │   ├── src/
-│   │   ├── main.jsx
+│   │   ├── assets/
+│   │   ├── componentes/
+│   │   ├── servicos/
 │   │   ├── App.jsx
-│   │   ├── App.module.css
-│   │   └── servicos/
-│   │       └── api.js
+│   │   ├── App.css
+│   │   └── main.jsx
 │   │
 │   ├── package.json
+│   ├── package-lock.json
 │   ├── vite.config.js
-│   ├── index.html
-│   └── README.md
+│   └── index.html
 │
+├── CadastroMusica.png
+├── Captura de tela...
+├── package.json
+├── package-lock.json
+├── LICENSE
 └── README.md
 ```
+
+> **Observação:** a estrutura acima representa a organização atual do projeto, diferente da estrutura `api/` e `cliente/` que aparecia no README anterior.
+
+---
+
+# Como o sistema funciona?
+
+O funcionamento do projeto acontece através da comunicação entre o **Front-end**, a **API** e o **banco de dados**.
+
+```text
+┌─────────────────┐
+│     USUÁRIO     │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│    FRONT-END    │
+│      React      │
+└────────┬────────┘
+         │
+         │ Requisição HTTP
+         ▼
+┌─────────────────┐
+│     BACK-END    │
+│  Spring Boot    │
+│      API REST   │
+└────────┬────────┘
+         │
+         │ JDBC
+         ▼
+┌─────────────────┐
+│ BANCO DE DADOS  │
+│       H2        │
+└─────────────────┘
+```
+
+Por exemplo, quando o usuário cadastra um álbum:
+
+1. O usuário preenche o formulário.
+2. O React coleta as informações.
+3. O Axios envia os dados para a API.
+4. O Spring Boot recebe a requisição.
+5. O Back-end realiza a operação no banco de dados.
+6. O banco armazena as informações.
+7. A API retorna uma resposta.
+8. O Front-end atualiza a tela.
+
+---
+
+# 🔗 Endpoints da API
+
+A API utiliza os métodos HTTP para realizar as operações de CRUD.
+
+| Método   | Endpoint       | Função                 |
+| -------- | -------------- | ---------------------- |
+| `GET`    | `/albuns`      | Lista todos os álbuns  |
+| `GET`    | `/albuns/{id}` | Busca um álbum pelo ID |
+| `POST`   | `/albuns`      | Cadastra um novo álbum |
+| `PUT`    | `/albuns/{id}` | Atualiza um álbum      |
+| `DELETE` | `/albuns/{id}` | Remove um álbum        |
+
+### CRUD
+
+O projeto utiliza as quatro operações principais:
+
+**Create → POST**
+Cadastra um novo álbum.
+
+**Read → GET**
+Consulta os álbuns cadastrados.
+
+**Update → PUT**
+Atualiza um álbum existente.
+
+**Delete → DELETE**
+Remove um álbum.
+
+---
+
+# Banco de Dados
+
+O projeto utiliza o **H2 Database** para armazenar os dados.
+
+As informações dos álbuns são organizadas de acordo com os campos utilizados pela aplicação:
+
+| Campo     | Informação             |
+| --------- | ---------------------- |
+| ID        | Identificação do álbum |
+| Título    | Nome do álbum          |
+| Artista   | Artista ou banda       |
+| Gênero    | Gênero musical         |
+| Ano       | Ano de lançamento      |
+| Gravadora | Gravadora responsável  |
 
 ---
 
@@ -106,8 +257,8 @@ projeto-musica/
 
 Antes de executar o projeto, é necessário ter instalado:
 
-* Java 21+
-* Node.js 18+
+* Java 21 ou superior
+* Node.js
 * npm
 
 ---
@@ -115,38 +266,32 @@ Antes de executar o projeto, é necessário ter instalado:
 ## 1. Clonar o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/projeto-musica.git
+git clone https://github.com/EduardaLima-09/ProjetoIndividual.git
 ```
 
-Depois:
+Depois, entre na pasta:
 
 ```bash
-cd projeto-musica
+cd ProjetoIndividual
 ```
 
 ---
 
 ## 2. Executar o Back-end
 
-Entre na pasta da API:
+Entre na pasta do Back-end:
 
 ```bash
-cd api
+cd back-end/cadastroMusica/cadastroMusica
 ```
 
-Execute o projeto:
-
-```bash
-./mvnw spring-boot:run
-```
-
-No Windows, caso necessário:
+No Windows, execute:
 
 ```bash
 mvnw.cmd spring-boot:run
 ```
 
-O back-end será executado na porta:
+O Back-end será iniciado na porta:
 
 ```text
 http://localhost:8080
@@ -156,10 +301,10 @@ http://localhost:8080
 
 ## 3. Executar o Front-end
 
-Abra outro terminal e entre na pasta do cliente:
+Abra **outro terminal** e entre na pasta do Front-end:
 
 ```bash
-cd cliente
+cd cadastroMusica
 ```
 
 Instale as dependências:
@@ -174,24 +319,72 @@ Depois execute:
 npm run dev
 ```
 
-O front-end será disponibilizado pelo Vite.
+O Vite irá disponibilizar o endereço da aplicação no próprio terminal.
 
 ---
 
-# 🔗 Endpoints da API
+# Comunicação entre as partes
 
-| Método | Endpoint       | Função                 |
-| ------ | -------------- | ---------------------- |
-| GET    | `/albuns`      | Lista todos os álbuns  |
-| GET    | `/albuns/{id}` | Busca um álbum pelo ID |
-| POST   | `/albuns`      | Cadastra um álbum      |
-| PUT    | `/albuns/{id}` | Atualiza um álbum      |
-| DELETE | `/albuns/{id}` | Remove um álbum        |
+O Front-end e o Back-end trabalham juntos, mas possuem responsabilidades diferentes.
+
+### Front-end
+
+Responsável por:
+
+* Mostrar as telas
+* Receber informações do usuário
+* Enviar requisições
+* Mostrar os resultados
+
+### Back-end
+
+Responsável por:
+
+* Receber as requisições
+* Processar as informações
+* Realizar as operações do CRUD
+* Acessar o banco de dados
+* Retornar respostas para o Front-end
+
+### Banco de dados
+
+Responsável por:
+
+* Armazenar os álbuns
+* Consultar informações
+* Alterar registros
+* Excluir registros
 
 ---
 
-# Projeto
+# Objetivos de aprendizagem
 
-**Catálogo Musical**
+Com o desenvolvimento deste projeto, foram trabalhados conceitos de:
 
-Projeto desenvolvido por Maria Eduarda Lima
+* Desenvolvimento de aplicações React
+* Componentização
+* CSS Modules
+* Consumo de APIs
+* Requisições HTTP
+* CRUD
+* API REST
+* Java
+* Spring Boot
+* Spring JDBC
+* JdbcTemplate
+* Banco de dados H2
+* Integração entre Front-end e Back-end
+
+---
+
+# Autora
+
+**Maria Eduarda Lima**
+
+Projeto desenvolvido para fins acadêmicos na **SPTECH**.
+
+---
+
+# Licença
+
+Este projeto está disponível sob a licença **Apache-2.0**.
